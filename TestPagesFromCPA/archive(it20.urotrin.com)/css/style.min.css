@@ -1,0 +1,420 @@
+/* Code tidied up by ScrapBook */
+body {
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", "Arial", sans-serif;
+    background-color: rgb(19, 19, 19);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+select {
+    outline: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("https://179523.selcdn.ru/public/layout-images/select-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px 10px;
+}
+
+select:hover {
+    background-size: 10px 10px;
+    background-position: right 10px center;
+}
+
+select:focus {
+    outline: none !important;
+    outline-color: transparent;
+    outline-width: 0;
+}
+
+select::-ms-expand {
+    display: none !important;
+    background: none !important;
+    position: fixed;
+    border: none !important;
+    outline: none !important;
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+select::-moz-focus-inner,
+option::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"]>input[type="button"]::-moz-focus-inner {
+    border: none;
+}
+
+*:not(#fake) {
+    outline: none;
+}
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+input:invalid {
+    box-shadow: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input.visually-hidden[type="checkbox"],
+input.visually-hidden[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0px;
+    white-space: nowrap;
+    border: 0px none;
+    clip-path: inset(100%);
+    clip: rect(0px, 0px, 0px, 0px);
+    overflow: hidden;
+}
+
+.btn {
+    font-size: 29px;
+    line-height: 30px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background-image: linear-gradient(rgb(214, 44, 44) 0%, rgb(240, 77, 68) 100%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(236, 150, 149) rgb(209, 67, 59) rgb(200, 64, 57);
+    border-radius: 5px;
+    padding: 10px 50px;
+    outline: 0px none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-image: linear-gradient(rgb(173, 34, 34) 0%, rgb(236, 32, 21) 100%);
+}
+
+.btn:active {
+    background-image: linear-gradient(rgb(131, 25, 25) 0%, rgb(191, 24, 15) 100%);
+}
+
+.page-header__wrapper {
+    width: 320px;
+    margin: 0px auto;
+    display: flex;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+.page-header__title {
+    margin: 0px;
+    font-size: 17px;
+    line-height: 20px;
+    color: rgb(255, 210, 0);
+    font-weight: 900;
+    width: 300px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.casanova__wrapper {
+    width: 320px;
+    margin: 0px auto;
+    display: flex;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+.casanova__logo {
+    margin: 0px 0px 5px;
+}
+
+.casanova__image {
+    position: relative;
+}
+
+.casanova__product {
+    position: absolute;
+    bottom: -40px;
+    right: -5px;
+}
+
+.casanova-description__wrapper {
+    width: 320px;
+    margin: 0px auto;
+    display: flex;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+.casanova-description__title {
+    width: 265px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 900;
+    text-align: center;
+    margin: 10px 0px 0px;
+    padding: 10px 25px;
+}
+
+.casanova-description__title span {
+    color: rgb(255, 210, 0);
+}
+
+.casanova-description__list {
+    display: flex;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -moz-box-pack: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 7px 0px 15px;
+    list-style: outside none none;
+    width: 100%;
+}
+
+.casanova-description__item {
+    position: relative;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.advantages__item::before,
+.casanova-description__item::before {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/checkmark.png");
+    background-repeat: no-repeat;
+}
+
+.advantages__wrapper {
+    width: 320px;
+    display: flex;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+    margin: 10px auto 0px;
+}
+
+.advantages__title {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 900;
+    background: rgb(216, 57, 57) none repeat scroll 0% 0%;
+    text-align: center;
+    padding: 15px 10px;
+    margin: 0px 0px 15px;
+    width: 100%;
+}
+
+.advantages__list {
+    margin: 0px;
+    padding: 0px;
+    list-style: outside none none;
+    width: 100%;
+}
+
+.advantages__list-title {
+    font-size: 24px;
+    font-weight: 900;
+    margin: 5px 0px 20px;
+    padding-left: 30px;
+}
+
+.advantages__item {
+    position: relative;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.advantages__item::before {
+    top: 10px;
+    left: 15px;
+    width: 47px;
+    height: 47px;
+    background-image: url("../images/male.png");
+}
+
+.if-you-think__wrapper {
+    width: 320px;
+    display: flex;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -moz-box-align: start;
+    align-items: flex-start;
+    margin: 15px auto;
+}
+
+.if-you-think__text {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 900;
+    font-style: italic;
+    margin: 0px;
+    padding: 10px 175px 15px 15px;
+    border: 3px dashed rgb(255, 255, 255);
+    background-color: rgb(30, 34, 41);
+}
+
+.if-you-think__text span {
+    color: rgb(255, 216, 0);
+    text-transform: uppercase;
+}
+
+.if-you-think__image {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+}
+
+.order-form {
+    margin-bottom: 0px;
+}
+
+.order-form__price,
+.order-form__wrapper {
+    display: flex;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+.order-form__wrapper {
+    width: 320px;
+    margin: 0px auto;
+    border-radius: 10px;
+}
+
+.order-form__price {
+    -moz-box-pack: start;
+    justify-content: flex-start;
+}
+
+.order-form__title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 20px 0px 10px;
+    text-align: center;
+}
+
+.price-container {
+    display: flex;
+    -moz-box-align: start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.old-price {
+    font-size: 23px;
+    font-weight: 900;
+    color: rgb(255, 54, 54);
+    text-decoration: line-through;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.new-price {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(238, 255, 24);
+}
+
+.order-form__label {
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.country-select,
+.order-form__input {
+    width: 280px;
+    border: 3px solid rgb(255, 222, 0);
+    border-radius: 5px;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 900;
+    text-align: center;
+    text-align-last: center;
+    margin-bottom: 13px;
+    padding: 10px 0px;
+}
+
+.form {
+    display: flex;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+footer {
+    padding: 30px 0;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-img svg {
+    width: 100%;
+    height: 100%;
+}
+
+.footer__link {
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer__link:hover {
+    text-decoration: none;
+}
